@@ -1,10 +1,16 @@
 // src/components/PokemonCard.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import type { PokemonWithJapaneseName } from '../api/pokemonWithJapaneseName';
+
+export type PokemonDetail = {
+  name: string;
+  url: string;
+  japaneseName: string;
+  number: string;
+}
 
 type PokemonCardProps = {
-  pokemon: PokemonWithJapaneseName;
+  pokemon: PokemonDetail;
 };
 
 const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
@@ -23,3 +29,4 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
 };
 
 export default PokemonCard;
+
