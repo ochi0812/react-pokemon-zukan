@@ -10,3 +10,4 @@ export default defineConfig(({ command }) => ({
   ],
   base: command === 'serve' ? '/' : '/react-pokemon-zukan/',
 }));
+
